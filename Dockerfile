@@ -16,3 +16,4 @@ RUN cd build
 RUN cmake ..
 RUN make -j4
 RUN make install
+CMD [""grive -a]
