@@ -2,6 +2,7 @@
 #
 
 FROM ubuntu
+WORKDIR /home/grive
 RUN apt-get update
 RUN apt-get install -y build-essential
 RUN apt-get install -y git cmake build-essential libgcrypt11-dev libyajl-dev \
@@ -16,4 +17,3 @@ RUN cd build
 RUN cmake ..
 RUN make -j4
 RUN make install
-CMD [""grive -a]
