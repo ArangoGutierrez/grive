@@ -6,7 +6,10 @@ Pealse refer to http://yourcmc.ru/wiki/Grive2#Installation
 
 For a first time Drive sync
 
-$ docker pull ashael/dockerdrive or docker build Dockerfile (after git clone)
+$ docker pull ashael/dockerdrive 
+or 
+$docker build Dockerfile (after git clone)
+
 $mkdir /home/MyGoogleDriveFoldeName
 $cd /home/MyGoogleDriveFoldeName
 $ docker run -it -v $PWD:/home/grive -w /home/grive grive
