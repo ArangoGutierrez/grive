@@ -15,6 +15,11 @@ and
 ```bash
 $ sudo singularity bootstrap /some/path/grive.img grive.def
 ```
+or 
+```bash
+ $ singularity pull --name "grive.img" shub://ArangoGutierrez/grive
+ ```
+
 In your host 
 ```bash
 $ mkdir /home/MyGoogleDriveFoldeName
