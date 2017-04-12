@@ -13,14 +13,14 @@ $ sudo singularity create /some/path/grive.img
 and
 
 ```bash
-$sudo singularity bootstrap /some/path/grive.img grive.def
+$ sudo singularity bootstrap /some/path/grive.img grive.def
 ```
 In your host 
 ```bash
-$mkdir /home/MyGoogleDriveFoldeName
+$ mkdir /home/MyGoogleDriveFoldeName
 ```
 ```bash
-$cd /home/MyGoogleDriveFoldeName
+$ cd /home/MyGoogleDriveFoldeName
 ```
 ```bash
 $ singularity exec /some/path/grive.img grive -a
@@ -28,7 +28,7 @@ $ singularity exec /some/path/grive.img grive -a
 
 After this, for Sync only
 ```bash
-$cd /home/MyGoogleDriveFoldeName
+$ cd /home/MyGoogleDriveFoldeName
 ```
 ```bash
 $ singularity exec /some/path/grive.img grive
