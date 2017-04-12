@@ -17,6 +17,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
   mkdir Driveclient
   cd Driveclient
   git clone https://github.com/vitalif/grive2
+  cd grive2
   mkdir build
   cd build
   cmake ..
