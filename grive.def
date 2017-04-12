@@ -1,0 +1,24 @@
+# Google Drive client
+#
+
+BootStrap: debootstrap
+OSVersion: xenial
+MirrorURL: http://us.archive.ubuntu.com/ubuntu/
+
+%post
+  mkdir /grive
+  cd /grive
+  apt-get update
+  apt-get install -y build-essential
+  apt-get install -y git cmake build-essential libgcrypt11-dev libyajl-dev \
+  libboost-all-dev libcurl4-openssl-dev libexpat1-dev libcppunit-dev binutils-dev
+  apt-get update
+  apt-get install -y zlib1g-dev libncurses5-dev libssl-dev pkg-config
+  mkdir Driveclient
+  cd Driveclient
+  git clone https://github.com/vitalif/grive2
+  mkdir build
+  cd build
+  cmake ..
+  make -j4
+  make install
