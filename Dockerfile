@@ -12,8 +12,9 @@ RUN apt-get install -y zlib1g-dev libncurses5-dev libssl-dev pkg-config
 RUN mkdir Driveclient
 RUN cd Driveclient
 RUN git clone https://github.com/vitalif/grive2
+WORKDIR /home/grive/grive2
 RUN mkdir build
-RUN cd build
+WORKDIR /home/grive/grive2/build
 RUN cmake ..
 RUN make -j4
 RUN make install
