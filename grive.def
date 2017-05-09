@@ -22,3 +22,6 @@
   cmake ..
   make -j4
   make install
+
+%runscript 
+  grive "$@"
