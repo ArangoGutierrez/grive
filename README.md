@@ -8,7 +8,7 @@ Pealse refer to http://yourcmc.ru/wiki/Grive2#Installation
 
 For a first time Drive sync
 ```bash
-$ sudo singularity create /some/path/grive.img 
+$ sudo singularity create -s 1024 /some/path/grive.img 
 ```
 and
 
@@ -28,7 +28,7 @@ $ mkdir /home/MyGoogleDriveFoldeName
 $ cd /home/MyGoogleDriveFoldeName
 ```
 ```bash
-$ singularity exec /some/path/grive.img grive -a
+$ singularity run /some/path/grive.img -a
 ```
 
 After this, for Sync only
@@ -36,7 +36,7 @@ After this, for Sync only
 $ cd /home/MyGoogleDriveFoldeName
 ```
 ```bash
-$ singularity exec /some/path/grive.img grive
+$ singularity run /some/path/grive.img
 ```
 ## Docker Drive
 A Docker imlementation for the Google Drive Client
